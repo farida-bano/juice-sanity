@@ -30,7 +30,7 @@ const JuicePage = () => {
   useEffect(() => {
     const fetchJuiceData = async () => {
       const data = await client.fetch(
-        `*[_type == "juice"][0]{
+        `*[_type == "juice"]{
           title,
           description,
           price,
